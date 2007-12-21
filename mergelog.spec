@@ -7,6 +7,7 @@ License:	GPL
 URL:		http://mergelog.sourceforge.net/
 Source0:	http://prdownloads.sourceforge.net/mergelog/%{name}-%{version}.tar.bz2
 BuildRequires:	zlib-devel
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 mergelog is a small and fast C program which merges by date httpd log files in
