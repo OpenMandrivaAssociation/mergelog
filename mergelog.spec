@@ -1,7 +1,7 @@
 Summary:	Merges httpd log files by date
 Name:		mergelog
 Version:	4.5
-Release:	%mkrel 3
+Release:	%mkrel 4
 Group:		System/Servers
 License:	GPL
 URL:		http://mergelog.sourceforge.net/
