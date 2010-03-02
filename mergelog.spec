@@ -1,9 +1,9 @@
 Summary:	Merges httpd log files by date
 Name:		mergelog
 Version:	4.5
-Release:	%mkrel 4
+Release:	%mkrel 5
 Group:		System/Servers
-License:	GPL
+License:	GPLv2
 URL:		http://mergelog.sourceforge.net/
 Source0:	http://prdownloads.sourceforge.net/mergelog/%{name}-%{version}.tar.bz2
 BuildRequires:	zlib-devel
@@ -16,13 +16,10 @@ designed to easily manage huge log files from highly stressed servers. mergelog
 is distributed with zmergelog which supports gzipped log files.
 
 %prep
-
 %setup -q
 
 %build
-
-%configure
-
+%configure2_5x
 %make
 
 %install
@@ -38,7 +35,7 @@ install -m0644 man/mergelog.1 %{buildroot}%{_mandir}/man1
 install -m0644 man/zmergelog.1 %{buildroot}%{_mandir}/man1
 
 %clean
-[ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
+rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(-,root,root,-)
