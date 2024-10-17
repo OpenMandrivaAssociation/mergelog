@@ -4,7 +4,7 @@ Version:	4.5
 Release:	7
 Group:		System/Servers
 License:	GPLv2
-URL:		http://mergelog.sourceforge.net/
+URL:		https://mergelog.sourceforge.net/
 Source0:	http://prdownloads.sourceforge.net/mergelog/%{name}-%{version}.tar.bz2
 BuildRequires:	zlib-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
