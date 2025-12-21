@@ -6,6 +6,11 @@ Group:		System/Servers
 License:	GPLv2
 URL:		https://mergelog.sourceforge.net/
 Source0:	http://prdownloads.sourceforge.net/mergelog/%{name}-%{version}.tar.bz2
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	zlib-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
